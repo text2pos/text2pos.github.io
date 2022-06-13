@@ -2,120 +2,156 @@
 <script type="text/javascript">google.load("jquery", "1.3.2");</script>
 <style type="text/css">
    body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-   font-weight:300;
-   font-size:18px;
-   margin-left: auto;
-   margin-right: auto;
-   width: 1100px;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1100px;
    }
+
    table {
-   table-layout: fixed; 
-   width: 100%;
+      table-layout: fixed;
+      width: 100%;
    }
+
    h1 {
-   font-weight:300;
+      font-weight: 300;
    }
+
    p {
-   text-align: justify;
-   valign:"top";
-   vertical-align: ;
+      text-align: justify;
+      valign: "top";
+      vertical-align: ;
    }
+
    .disclaimerbox {
-   background-color: #eee;
-   border: 1px solid #eeeeee;
-   border-radius: 10px ;
-   -moz-border-radius: 10px ;
-   -webkit-border-radius: 10px ;
-   padding: 20px;
+      background-color: #eee;
+      border: 1px solid #eeeeee;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      padding: 20px;
    }
+
    video.header-vid {
-   height: 140px;
-   border: 1px solid black;
-   border-radius: 10px ;
-   -moz-border-radius: 10px ;
-   -webkit-border-radius: 10px ;
+      height: 140px;
+      border: 1px solid black;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
    }
+
    img.header-img {
-   height: 140px;
-   border: 1px solid black;
-   border-radius: 10px ;
-   -moz-border-radius: 10px ;
-   -webkit-border-radius: 10px ;
+      height: 140px;
+      border: 1px solid black;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
    }
+
    img.rounded {
-   border: 1px solid #eeeeee;
-   border-radius: 10px ;
-   -moz-border-radius: 10px ;
-   -webkit-border-radius: 10px ;
+      border: 1px solid #eeeeee;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
    }
-   a:link,a:visited
-   {
-   color: #1367a7;
-   text-decoration: none;
+
+   a:link,
+   a:visited {
+      color: #1367a7;
+      text-decoration: none;
    }
+
    a:hover {
-   color: #208799;
+      color: #208799;
    }
-   td { text-align: center;
-   vertical-align: top;
+
+   td {
+      text-align: center;
+      vertical-align: top;
    }
+
    td.dl-link {
-   height: 160px;
-   text-align: justify;
-   font-size: 22px;
+      height: 160px;
+      text-align: justify;
+      font-size: 22px;
    }
+
    tr.spaceUnder>td {
-   padding-bottom: 10px;
+      padding-bottom: 10px;
    }
-   .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-   box-shadow:
-   0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-   5px 5px 0 0px #fff, /* The second layer */
-   5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-   10px 10px 0 0px #fff, /* The third layer */
-   10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
-   15px 15px 0 0px #fff, /* The fourth layer */
-   15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
-   20px 20px 0 0px #fff, /* The fifth layer */
-   20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-   25px 25px 0 0px #fff, /* The fifth layer */
-   25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
-   margin-left: 10px;
-   margin-right: 45px;
+
+   .layered-paper-big {
+      /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+      box-shadow:
+         0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+         /* The top layer shadow */
+         5px 5px 0 0px #fff,
+         /* The second layer */
+         5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+         /* The second layer shadow */
+         10px 10px 0 0px #fff,
+         /* The third layer */
+         10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+         /* The third layer shadow */
+         15px 15px 0 0px #fff,
+         /* The fourth layer */
+         15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+         /* The fourth layer shadow */
+         20px 20px 0 0px #fff,
+         /* The fifth layer */
+         20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+         /* The fifth layer shadow */
+         25px 25px 0 0px #fff,
+         /* The fifth layer */
+         25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+      /* The fifth layer shadow */
+      margin-left: 10px;
+      margin-right: 45px;
    }
-   .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-   box-shadow:
-   0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-   5px 5px 0 0px #fff, /* The second layer */
-   5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-   10px 10px 0 0px #fff, /* The third layer */
-   10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
-   margin-top: 5px;
-   margin-left: 10px;
-   margin-right: 30px;
-   margin-bottom: 5px;
+
+   .layered-paper {
+      /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+      box-shadow:
+         0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+         /* The top layer shadow */
+         5px 5px 0 0px #fff,
+         /* The second layer */
+         5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+         /* The second layer shadow */
+         10px 10px 0 0px #fff,
+         /* The third layer */
+         10px 10px 1px 1px rgba(0, 0, 0, 0.35);
+      /* The third layer shadow */
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: 30px;
+      margin-bottom: 5px;
    }
+
    .vert-cent {
-   position: relative;
-   top: 50%;
-   transform: translateY(-50%);
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
    }
-   hr
-   {
-   border: 0;
-   height: 1.5px;
-   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+   hr {
+      border: 0;
+      height: 1.5px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
    }
 </style>
 <html>
-   <head>
-      <title>Text2Pos - CVPR 2022</title>
-      <meta property="og:title" content="Text2Pos - CVPR 2022" />
-   </head>
-   <body>
-      <br>
-      <center>
+
+<head>
+   <title>Text2Pos - CVPR 2022</title>
+   <meta property="og:title" content="Text2Pos - CVPR 2022" />
+</head>
+
+<body>
+   <br>
+   <center>
       <span style="font-size:42px">Text2Pos: Text-to-point-cloud cross-modal localization</span>
       <!-- </center> -->
       <br>
@@ -135,20 +171,35 @@
             </td>
          </tr>
       </table>
-      <table align=centerx >
+      <br>
+      <!-- <table align=centerx>
          <tr>
+            <td align=center style="display: flex;justify-content: center; align-items: center;">
+               <div>
+
+               </div>
             <td align=center>
-               <a href="https://dvl.in.tum.de/">
-               <img src="https://www.wi.tum.de/wp-content/uploads/2019/06/LOGO_TUM-1.png" width="300">
-               </a>
+
             </td>
          </tr>
-      </table>
+      </table> -->
+      <div style="display: flex; justify-content: space-evenly; align-items: center;">
+         <div>
+            <a href="https://cvpr2022.thecvf.com/">
+               <img src="img/cvpr-logo.png" width="400">
+            </a>
+         </div>
+         <div>
+            <a href="https://dvl.in.tum.de/">
+               <img src="img/TUM_Web_Logo_blau.svg" width="300">
+            </a>
+         </div>
+      </div>
       <br>
-      <table align=center  style="font-size:32px">
+      <table align=center style="font-size:32px">
          <tr>
-            <td><a href="">[Paper - coming soon]</a></td>
-            <td><a href="">[Bibtex - coming soon]</a> </td>
+            <td><a href="https://arxiv.org/abs/2203.15125">[Paper]</a></td>
+            <td><a href="bibtex.txt">[Bibtex]</a> </td>
             <td> <a href="https://github.com/mako443/Text2Pos-CVPR2022">[Github]</a> </td>
          </tr>
       </table>
@@ -156,28 +207,65 @@
       <br>
       <br>
       <center>
-         <h1>Overview Video - coming soon</h1>
+         <h1>Overview Video</h1>
       </center>
-      <iframe width="100%" height="0%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe width="100%" height="0%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen></iframe> -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LadvodmIluQ" title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <center>
          <h1>Abstract</h1>
       </center>
       <p>
-        Natural language-based communication with mobile devices and home appliances is becoming increasingly popular and has the potential to become natural for communicating with mobile robots in the future. 
-        Towards this goal, we investigate cross-modal text-to-point-cloud localization that will allow us to specify, for example, a vehicle pick-up or goods delivery location. 
-        In particular, we propose Text2Pos, a cross-modal localization module that learns to align textual descriptions with localization cues in a coarse-to-fine manner. 
-        Given a point cloud of the environment, Text2Pos locates a position that is specified via a natural language-based description of the immediate surroundings. 
-        To train Text2Pos and study its performance, we construct KITTI360Pose, the first dataset for this task based on the recently introduced KITTI360 dataset. 
-        Our experiments show that we can localize 65% of textual queries within 15m distance to query locations for top-10 retrieved locations. 
-        This is a starting point that we hope will spark future developments towards language-based navigation.
+         Natural language-based communication with mobile devices and home appliances is becoming increasingly popular and has the potential to become natural for communicating
+         with mobile robots in the future.
+         Towards this goal, we investigate cross-modal text-to-point-cloud localization that will allow us to specify, for example, a vehicle pick-up or goods delivery location.
+         In particular, we propose Text2Pos, a cross-modal localization module that learns to align textual descriptions with localization cues in a coarse-to-fine manner.
+         Given a point cloud of the environment, Text2Pos locates a position that is specified via a natural language-based description of the immediate surroundings.
+         To train Text2Pos and study its performance, we construct KITTI360Pose, the first dataset for this task based on the recently introduced KITTI360 dataset.
+         Our experiments show that we can localize 65% of textual queries within 15m distance to query locations for top-10 retrieved locations.
+         This is a starting point that we hope will spark future developments towards language-based navigation.
       </p>
       <hr>
-      <!-- KEY IDEAS -->
       <center>
-         <h1>Key Ideas</h1>
+         <h1>Motivation</h1>
       </center>
+      <table align=center>
+         <tr class="spaceUnder">
+            <td>
+               <img style="width:150px" src="img/motivation-scene.png" />
+            </td>
+            <td>
+               <img style="width:400px" src="img/motivation.png" />
+            </td>
+            <td>
+               <img style="width:250px" src="img/motivation-query.png" />
+            </td>
+         </tr>
+         <tr>
+            <td style="text-align:center; padding-left:20px; padding-right:20px;">
+               <p><b>
+                     <center>(a) City-scale point cloud</center>
+                  </b>
+            </td>
+            <td style="text-align:center; padding-left:20px; padding-right:20px">
+               <p><b>
+                     <center>(b) Natural language query</center>
+                  </b>
+            </td>
+            <td style="text-align:center; padding-left:20px; padding-right:20px">
+               <p><b>
+                     <center>(c) Text-to-pointcloud localization</center>
+                  </b>
+            </td>
+         </tr>
+
+      </table>
+
       <p>
-         Our key idea is Text2Pos, a first method to perform text-to-pointcloud localization.
+         Specifying free-form locations for autonomous robots (pickup, delivery, ...) using natural language (a)! <br><br>
+         We wish to extend AI-based localization to natural-language-based queries: Using a database of 3D RGB point clouds (a) and
+         text queries describing the objects relative to a pose (b), the task is to provide the most likely position estimate for the query (c).
       </p>
       <hr>
       <table align=center width=900>
@@ -186,15 +274,15 @@
          </center>
          <tr>
             <td></td>
-            <td><a href="https://arxiv.org/">
-               <img class="layered-paper-big" style="height:175px" src=""></a>
+            <td><a href="https://arxiv.org/abs/2203.15125">
+                  <img class="layered-paper-big" style="height:175px" src="img/pdf-thumbnail.png"></a>
             </td>
             <td>
                <p style="text-align: center">Text2Pos: Text-to-point-cloud cross-modal localization</p>
                <br>
-               CVPR 2020  <a href = ""> <b> </b> </a><br><br>
-               <a href="">[Paper - coming soon]</a> &nbsp; &nbsp;
-               <a href="">[Bibtex - coming soon]</a> &nbsp; &nbsp;
+               CVPR 2022 <a href=""> <b> </b> </a><br><br>
+               <a href="https://arxiv.org/abs/2203.15125">[Paper]</a> &nbsp; &nbsp;
+               <a href="bibtex.txt">[Bibtex]</a> &nbsp; &nbsp;
                <a href="https://github.com/mako443/Text2Pos-CVPR2022">[Github]</a>
             </td>
             <td></td>
@@ -204,15 +292,35 @@
       <br>
       <hr>
       <center>
+         <h1>Model overview</h1>
+      </center>
+      <table align=center>
+         <tr class="spaceUnder">
+            <td>
+               <img style="width:80%" src="img/pipeline_final.png" />
+            </td>
+         </tr>
+      </table>
+      <p>
+         We present the first method for coarse-to-fine text-to-pointcloud localization. <br>
+         First, we split the scene into rectangular areas ("cells") and train a joint text-cell-embedding to perform top-k cell retrieval (coarse). <br>
+         Second, we match closely between instances mentioned in the query text and instances found in the top-k retrieved cells.
+         For each cell instance that is matched, we regress a translation offset vector between that object and the predicted pose to obtain a more accurate estimation (fine.)
+      </p>
+      <hr>
+      <center>
          <h1>Code</h1>
       </center>
+      <p>
+         We make our dataset, model code and pre-trained models publicly available.
+      </p>
       <tr>
          <td>
-            <span style="font-size:28px">&nbsp;<a href='https://github.com/mako443/Text2Pos-CVPR2022'>[GitHub]</a>
+            <span style="font-size:28px">&nbsp;<a href='https://github.com/mako443/Text2Pos-CVPR2022'>[Code &amp; Models]</a>
          </td>
          <td>
             <span style="font-size:28px">&nbsp;<a href='https://vision.in.tum.de/webshare/g/text2pose/'>[Dataset]</a>
-         </td>         
+         </td>
          <br>
          <hr>
          <table align=center width=950px>
@@ -228,5 +336,6 @@
             </tr>
          </table>
          <br><br>
-   </body>
+</body>
+
 </html>
